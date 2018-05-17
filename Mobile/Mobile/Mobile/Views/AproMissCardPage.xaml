@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:behavior="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             Title="審核考勤補登頁面"
+             x:Class="Mobile.Views.AproMissCardPage">
+    <StackLayout>
+        <Grid>
+            <Label Grid.Row="0" Grid.Column="0" Text="工號"/>
+            <Label Grid.Row="0" Grid.Column="1" Text="姓名"/>
+            <Label Grid.Row="0" Grid.Column="2" Text="日期"/>
+            <Label Grid.Row="0" Grid.Column="3" Text="時間"/>
+            <Label Grid.Row="0" Grid.Column="4" Text="審核"/>
+        </Grid>
+        <Grid
+            RowSpacing="1" ColumnSpacing="1" BackgroundColor="LightBlue" VerticalOptions="FillAndExpand">
+           
+            <!--更多 ListView 的可用屬性，可以參考 https://developer.xamarin.com/api/type/Xamarin.Forms.ListView/-->
+            <ListView x:Name="list"
+                ItemsSource="{Binding MissCardItemList}"
+                SelectedItem="{Binding MissCardItemSelected, Mode=TwoWay}"
+                HasUnevenRows="True"
+                IsPullToRefreshEnabled="True"
+                RefreshCommand="{Binding MissCardRefreshCommand}"
+                IsRefreshing="{Binding RefreshingStatus}"
+                >
+
+                <!--這裡設定當使用者點選某個項目，需要執行的命令
+                而使用者所點選的項目，可以透過 MyTaskItemSelected 物件得知-->
+
+                <!--這裡為什麼不使用 ItemSelected，而是使用 ItemTapped-->
+                <ListView.Behaviors>
+                    <behavior:EventToCommandBehavior
+                        EventName="ItemTapped"
+                        Command="{Binding MissCardItemSelectedCommand}"/>
+                </ListView.Behaviors>
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="100"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Row="0" Grid.Column="0" Text="{Binding emp}"/>
+                                <Label Grid.Row="0" Grid.Column="1" Text="{Binding emp_name}"/>
+                                <Label Grid.Row="0" Grid.Column="2" Text="{Binding attd_date}"/>
+                                <Label Grid.Row="0" Grid.Column="3" Text="{Binding attd_time}"/>
+                                <!--<Switch Grid.Row="0" Grid.Column="4" IsToggled ="{Binding IsApro}" />-->
+                                <StackLayout x:Name="stLayout" Spacing="0" Grid.Row="0" Grid.Column="4" Orientation="Horizontal" VerticalOptions="Start" HorizontalOptions="Start">
+                                    <Button Text="Y" WidthRequest="40" HeightRequest="40" 
+                                            BindingContext="{Binding Source={x:Reference list},Path=BindingContext }"
+                                            CommandParameter="{Binding Source={x:Reference stLayout},Path=BindingContext}"
+                                            Command="{Binding  YesCommand}"
+                                            >
+                                        <Button.Triggers>
+                                            <DataTrigger 
+                                                TargetType="Button"
+                                                Binding="{Binding apro_yn}"
+                                                Value="Y">
+                                                <Setter Property="BackgroundColor" Value="Green" />
+                                            </DataTrigger>
+                                        </Button.Triggers>
+                                    </Button>
+                                    <Button Text="N" WidthRequest="40" HeightRequest="40" 
+                                            BindingContext="{Binding Source={x:Reference list},Path=BindingContext }"
+                                            CommandParameter="{Binding Source={x:Reference stLayout},Path=BindingContext}"
+                                            Command="{Binding  NoCommand}"
+                                            />
+                                </StackLayout>
+                                
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+        <Grid>
+            <Button Grid.Row="0" Grid.Column="0" Text="離開" Command="{Binding ExitCommand}" />
+            <Button Grid.Row="0" Grid.Column="1" Text="確認" Command="{Binding AcceptCommand}"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>

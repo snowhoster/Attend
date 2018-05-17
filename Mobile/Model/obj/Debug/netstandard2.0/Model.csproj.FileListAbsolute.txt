@@ -1,0 +1,17 @@
+E:\Source\MIS\2018\AppTemplate\PrismMobile\Model\bin\Debug\netstandard2.0\Model.deps.json
+E:\Source\MIS\2018\AppTemplate\PrismMobile\Model\bin\Debug\netstandard2.0\Model.dll
+E:\Source\MIS\2018\AppTemplate\PrismMobile\Model\obj\Debug\netstandard2.0\Model.csprojResolveAssemblyReference.cache
+E:\Source\MIS\2018\AppTemplate\PrismMobile\Model\obj\Debug\netstandard2.0\Model.csproj.CoreCompileInputs.cache
+E:\Source\MIS\2018\AppTemplate\PrismMobile\Model\obj\Debug\netstandard2.0\Model.AssemblyInfoInputs.cache
+E:\Source\MIS\2018\AppTemplate\PrismMobile\Model\obj\Debug\netstandard2.0\Model.AssemblyInfo.cs
+E:\Source\MIS\2018\AppTemplate\PrismMobile\Model\bin\Debug\netstandard2.0\Model.pdb
+E:\Source\MIS\2018\AppTemplate\PrismMobile\Model\obj\Debug\netstandard2.0\Model.dll
+E:\Source\MIS\2018\AppTemplate\PrismMobile\Model\obj\Debug\netstandard2.0\Model.pdb
+E:\Source\MIS\2018\Aattend\Mobile\Model\bin\Debug\netstandard2.0\Model.deps.json
+E:\Source\MIS\2018\Aattend\Mobile\Model\bin\Debug\netstandard2.0\Model.dll
+E:\Source\MIS\2018\Aattend\Mobile\Model\bin\Debug\netstandard2.0\Model.pdb
+E:\Source\MIS\2018\Aattend\Mobile\Model\obj\Debug\netstandard2.0\Model.csproj.CoreCompileInputs.cache
+E:\Source\MIS\2018\Aattend\Mobile\Model\obj\Debug\netstandard2.0\Model.AssemblyInfoInputs.cache
+E:\Source\MIS\2018\Aattend\Mobile\Model\obj\Debug\netstandard2.0\Model.AssemblyInfo.cs
+E:\Source\MIS\2018\Aattend\Mobile\Model\obj\Debug\netstandard2.0\Model.dll
+E:\Source\MIS\2018\Aattend\Mobile\Model\obj\Debug\netstandard2.0\Model.pdb

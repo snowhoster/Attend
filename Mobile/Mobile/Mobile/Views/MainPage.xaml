@@ -7,7 +7,7 @@
              Title="考勤系統APP作業功能選單"             
              >
 
-    <Grid ColumnSpacing="1" RowSpacing="1">
+    <Grid ColumnSpacing="2" RowSpacing="5">
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
             <RowDefinition Height="*"/>

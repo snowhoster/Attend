@@ -38,6 +38,8 @@ namespace Mobile
             containerRegistry.RegisterForNavigation<Login>();
             containerRegistry.RegisterForNavigation<ptmq003>();
             containerRegistry.RegisterForNavigation<AproMissCardPage>();
+            containerRegistry.RegisterForNavigation<ptmu002>();
+           
         }
     }
 }

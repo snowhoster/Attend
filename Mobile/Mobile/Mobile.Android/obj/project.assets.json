@@ -4526,11 +4526,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Source\\TEST\\git\\Mobile\\Mobile\\Mobile.Android\\Mobile.Android.csproj",
+      "projectUniqueName": "E:\\TestXamarin\\mobile\\Attend\\Mobile\\Mobile\\Mobile.Android\\Mobile.Android.csproj",
       "projectName": "Mobile.Android",
-      "projectPath": "E:\\Source\\TEST\\git\\Mobile\\Mobile\\Mobile.Android\\Mobile.Android.csproj",
+      "projectPath": "E:\\TestXamarin\\mobile\\Attend\\Mobile\\Mobile\\Mobile.Android\\Mobile.Android.csproj",
       "packagesPath": "C:\\Users\\i107948\\.nuget\\packages\\",
-      "outputPath": "E:\\Source\\TEST\\git\\Mobile\\Mobile\\Mobile.Android\\obj\\",
+      "outputPath": "E:\\TestXamarin\\mobile\\Attend\\Mobile\\Mobile\\Mobile.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -4551,11 +4551,11 @@
       "frameworks": {
         "monoandroid71": {
           "projectReferences": {
-            "E:\\Source\\TEST\\git\\Mobile\\Mobile\\Mobile\\Mobile.csproj": {
-              "projectPath": "E:\\Source\\TEST\\git\\Mobile\\Mobile\\Mobile\\Mobile.csproj"
+            "E:\\TestXamarin\\mobile\\Attend\\Mobile\\Mobile\\Mobile\\Mobile.csproj": {
+              "projectPath": "E:\\TestXamarin\\mobile\\Attend\\Mobile\\Mobile\\Mobile\\Mobile.csproj"
             },
-            "E:\\Source\\TEST\\git\\Mobile\\Model\\Model.csproj": {
-              "projectPath": "E:\\Source\\TEST\\git\\Mobile\\Model\\Model.csproj"
+            "E:\\TestXamarin\\mobile\\Attend\\Mobile\\Model\\Model.csproj": {
+              "projectPath": "E:\\TestXamarin\\mobile\\Attend\\Mobile\\Model\\Model.csproj"
             }
           }
         }

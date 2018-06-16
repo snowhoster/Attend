@@ -6538,11 +6538,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Source\\TEST\\git\\Mobile\\Mobile\\Mobile.iOS\\Mobile.iOS.csproj",
+      "projectUniqueName": "E:\\TestXamarin\\mobile\\Attend\\Mobile\\Mobile\\Mobile.iOS\\Mobile.iOS.csproj",
       "projectName": "Mobile.iOS",
-      "projectPath": "E:\\Source\\TEST\\git\\Mobile\\Mobile\\Mobile.iOS\\Mobile.iOS.csproj",
+      "projectPath": "E:\\TestXamarin\\mobile\\Attend\\Mobile\\Mobile\\Mobile.iOS\\Mobile.iOS.csproj",
       "packagesPath": "C:\\Users\\i107948\\.nuget\\packages\\",
-      "outputPath": "E:\\Source\\TEST\\git\\Mobile\\Mobile\\Mobile.iOS\\obj\\",
+      "outputPath": "E:\\TestXamarin\\mobile\\Attend\\Mobile\\Mobile\\Mobile.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -6563,8 +6563,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "E:\\Source\\TEST\\git\\Mobile\\Mobile\\Mobile\\Mobile.csproj": {
-              "projectPath": "E:\\Source\\TEST\\git\\Mobile\\Mobile\\Mobile\\Mobile.csproj"
+            "E:\\TestXamarin\\mobile\\Attend\\Mobile\\Mobile\\Mobile\\Mobile.csproj": {
+              "projectPath": "E:\\TestXamarin\\mobile\\Attend\\Mobile\\Mobile\\Mobile\\Mobile.csproj"
             }
           }
         }

@@ -1,6 +1,7 @@
 CommonServiceLocator
 FormsViewGroup
 Mobile
+Model
 Newtonsoft.Json
 PCLStorage.Abstractions
 PCLStorage.Standard
@@ -53,4 +54,3 @@ System.Globalization
 System.IO.FileSystem.Primitives
 System.Collections
 System.Reflection.Extensions
-Model

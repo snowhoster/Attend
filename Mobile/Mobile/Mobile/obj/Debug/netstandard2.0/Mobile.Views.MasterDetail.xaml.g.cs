@@ -11,7 +11,7 @@
 namespace Mobile.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("E:\\Source\\MIS\\2018\\Aattend\\Mobile\\Mobile\\Mobile\\Views\\MasterDetail.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("E:\\TestXamarin\\mobile\\Attend\\Mobile\\Mobile\\Mobile\\Views\\MasterDetail.xaml")]
     public partial class MasterDetail : global::Xamarin.Forms.MasterDetailPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

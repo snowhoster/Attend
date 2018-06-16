@@ -26,6 +26,9 @@ namespace Mobile.Droid
         public void RegisterTypes(IContainerRegistry container)
         {
             // Register any platform specific implementations
+
+          
+
         }
     }
 }

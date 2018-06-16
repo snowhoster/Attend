@@ -25,18 +25,31 @@ namespace Service
             return new AuthenticationHeaderValue("Basic", Convert.ToBase64String(byteArray));
         }
 
-        public async Task<List<MissCard>> Get_NoneAproMissCardByAproEmp(string emp)
+        public async Task<List<MissCard>> Get_NoneAproMissCardByAproEmp(AproRequest request)
         {
             List<MissCard> result = new List<MissCard>();
             try
             {
 
+                //芯怡 本機測試用
+                //HOST_IP = "192.9.25.165";
+                //HOST_PORT = "80";
+
                 HttpClient client = new HttpClient();
                 client.BaseAddress = new Uri(string.Format("http://{0}:{1}/)", HOST_IP, HOST_PORT));
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                string Route = $"API/api/GetNoneAproMissCardByAproEmp";
-                var json = JsonConvert.SerializeObject(new { as_emp = emp });
+
+
+                //server                      
+                string Route = $"AttendAPI/api/GetNoneAproMissCardByAproEmp";
+
+                //local 
+                //string Route = $"WebApi/api/GetNoneAproMissCardByAproEmp";
+                
+                
+                // var json = JsonConvert.SerializeObject(new { as_emp = emp });
+                var json = JsonConvert.SerializeObject(request);
                 HttpContent content = new StringContent(json, Encoding.UTF8, "application/json");
                 var response = await client.PostAsync(Route, content);
                 var webresponse = await response.Content.ReadAsStringAsync();
@@ -55,21 +68,42 @@ namespace Service
 
         public async Task<bool> Set_AproMissCard(AproRequest request)
         {
+
+
             bool result = false;
             try
             {
+
+                // 芯怡 本機測試用
+                //HOST_IP = "192.9.25.165";
+                //HOST_PORT = "80";
+
+
 
                 HttpClient client = new HttpClient();
                 client.BaseAddress = new Uri(string.Format("http://{0}:{1}/)", HOST_IP, HOST_PORT));
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                string Route = $"API/api/GetNoneAproMissCardByAproEmp";
+               
+
+                //server
+                string Route = $"AttendAPI/api/SetAproMissCard";
+
+                //local
+                //string Route = $"WebApi/api/SetAproMissCard";
+
+
+
+
+
                 var json = JsonConvert.SerializeObject(request);
                 HttpContent content = new StringContent(json, Encoding.UTF8, "application/json");
                 var response = await client.PostAsync(Route, content);
                 var webresponse = await response.Content.ReadAsStringAsync();
                 if (response.IsSuccessStatusCode)
                 {
+
+                    result = true;
                 }
             }
             catch (Exception ex)
@@ -77,6 +111,11 @@ namespace Service
                 string s = ex.ToString();
             }
             return result;
+
+
+
+
+
         }
     }
 }

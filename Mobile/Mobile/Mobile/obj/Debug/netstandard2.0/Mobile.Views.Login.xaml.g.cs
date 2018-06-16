@@ -11,7 +11,7 @@
 namespace Mobile.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("E:\\Source\\MIS\\2018\\Aattend\\Mobile\\Mobile\\Mobile\\Views\\Login.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("E:\\TestXamarin\\mobile\\Attend\\Mobile\\Mobile\\Mobile\\Views\\Login.xaml")]
     public partial class Login : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

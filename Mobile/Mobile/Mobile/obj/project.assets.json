@@ -1059,11 +1059,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Source\\TEST\\git\\Mobile\\Mobile\\Mobile\\Mobile.csproj",
+      "projectUniqueName": "E:\\TestXamarin\\mobile\\Attend\\Mobile\\Mobile\\Mobile\\Mobile.csproj",
       "projectName": "Mobile",
-      "projectPath": "E:\\Source\\TEST\\git\\Mobile\\Mobile\\Mobile\\Mobile.csproj",
+      "projectPath": "E:\\TestXamarin\\mobile\\Attend\\Mobile\\Mobile\\Mobile\\Mobile.csproj",
       "packagesPath": "C:\\Users\\i107948\\.nuget\\packages\\",
-      "outputPath": "E:\\Source\\TEST\\git\\Mobile\\Mobile\\Mobile\\obj\\",
+      "outputPath": "E:\\TestXamarin\\mobile\\Attend\\Mobile\\Mobile\\Mobile\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
@@ -1084,8 +1084,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "E:\\Source\\TEST\\git\\Mobile\\Service\\Service.csproj": {
-              "projectPath": "E:\\Source\\TEST\\git\\Mobile\\Service\\Service.csproj"
+            "E:\\TestXamarin\\mobile\\Attend\\Mobile\\Service\\Service.csproj": {
+              "projectPath": "E:\\TestXamarin\\mobile\\Attend\\Mobile\\Service\\Service.csproj"
             }
           }
         }

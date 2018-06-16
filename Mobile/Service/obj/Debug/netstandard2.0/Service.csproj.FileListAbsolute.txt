@@ -22,3 +22,15 @@ E:\Source\MIS\2018\Aattend\Mobile\Service\obj\Debug\netstandard2.0\Service.Assem
 E:\Source\MIS\2018\Aattend\Mobile\Service\obj\Debug\netstandard2.0\Service.csproj.CopyComplete
 E:\Source\MIS\2018\Aattend\Mobile\Service\obj\Debug\netstandard2.0\Service.dll
 E:\Source\MIS\2018\Aattend\Mobile\Service\obj\Debug\netstandard2.0\Service.pdb
+E:\TestXamarin\mobile\Attend\Mobile\Service\bin\Debug\netstandard2.0\Service.deps.json
+E:\TestXamarin\mobile\Attend\Mobile\Service\bin\Debug\netstandard2.0\Service.dll
+E:\TestXamarin\mobile\Attend\Mobile\Service\bin\Debug\netstandard2.0\Service.pdb
+E:\TestXamarin\mobile\Attend\Mobile\Service\bin\Debug\netstandard2.0\Model.dll
+E:\TestXamarin\mobile\Attend\Mobile\Service\bin\Debug\netstandard2.0\Model.pdb
+E:\TestXamarin\mobile\Attend\Mobile\Service\obj\Debug\netstandard2.0\Service.csprojResolveAssemblyReference.cache
+E:\TestXamarin\mobile\Attend\Mobile\Service\obj\Debug\netstandard2.0\Service.csproj.CoreCompileInputs.cache
+E:\TestXamarin\mobile\Attend\Mobile\Service\obj\Debug\netstandard2.0\Service.AssemblyInfoInputs.cache
+E:\TestXamarin\mobile\Attend\Mobile\Service\obj\Debug\netstandard2.0\Service.AssemblyInfo.cs
+E:\TestXamarin\mobile\Attend\Mobile\Service\obj\Debug\netstandard2.0\Service.csproj.CopyComplete
+E:\TestXamarin\mobile\Attend\Mobile\Service\obj\Debug\netstandard2.0\Service.dll
+E:\TestXamarin\mobile\Attend\Mobile\Service\obj\Debug\netstandard2.0\Service.pdb

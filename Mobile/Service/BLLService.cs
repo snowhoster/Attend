@@ -27,8 +27,13 @@ namespace Service
             var config = phomeDAL.GetConfig();
             remoteAccess = new RemoteAccess
             {
-                HOST_IP = config[0].IP,
-                HOST_PORT = config[0].Port,
+               
+                //DNS 解析的關係,不能打IP
+                // HOST_IP = "172.16.1.12",//config[0].IP,
+                HOST_IP = "www2.csbcnet.com.tw",
+                HOST_PORT = "80",//config[0].Port,
+
+
                 USER_ID = config[0].Name,
                 PHONE_PW = config[0].Password
             };
@@ -55,15 +60,34 @@ namespace Service
             return phomeDAL.SetConfig(item);
         }
 
-        public List<MissCard> Get_MissCards(string as_emp)
+        public List<MissCard> Get_MissCardsTest(string as_emp)
         {
             List<MissCard> result = new List<MissCard> {
-                new MissCard {emp="107948",emp_name="霖霖",attd_date="1070505",attd_time="1010"},
-                new MissCard {emp="107941",emp_name="一一",attd_date="1070505",attd_time="1010"},
+               
+                new MissCard {emp="222222",emp_name="台船一寶",attd_date="1070501",attd_time="0805"},
+                new MissCard {emp="333333",emp_name="台船二寶",attd_date="1070506",attd_time="1010"},
+                new MissCard {emp="444444",emp_name="台船三寶",attd_date="1070512",attd_time="0759"},
             };
 
             return result;
         }
+
+
+        public async Task<bool> Set_MissCards(AproRequest request)
+        {
+            var result = await remoteAccess.Set_AproMissCard(request);
+            return true;
+        }
+
+            public async Task<List<MissCard>> Get_MissCards(AproRequest request)
+        {
+            var result = await remoteAccess.Get_NoneAproMissCardByAproEmp(request);
+
+            return result;
+        }
+
+
+
 
     }
 }

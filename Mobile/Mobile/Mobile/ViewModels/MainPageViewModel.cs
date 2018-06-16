@@ -33,22 +33,40 @@ namespace Mobile.ViewModels
 
         public MainPageViewModel(INavigationService navigationService)
         {
+#if DEBUG
+            //EmpId = "040407";
+            //EmpName = "謝正順";
+
+            EmpId = "085869";
+            EmpName = "許原賓";
+
+#endif
+
             _navigationService = navigationService;
+            NavigationParameters para = new NavigationParameters
+            {
+                { "Empid", EmpId },
+                { "EmpName", EmpName},
+            };
+
             MissPunchInCommand = new DelegateCommand(() =>
             {
-                var a = 1;
+                
             });
+
+            //主管確認補登刷卡
             ConfirmPunchInCommand = new DelegateCommand(() =>
             {
-                _navigationService.NavigateAsync("/NavigationPage/MainPage/AproMissCardPage");
+                // _navigationService.NavigateAsync("/NavigationPage/MainPage/AproMissCardPage");
+                _navigationService.NavigateAsync("/NavigationPage/MainPage/ptmu002", para);
             });
             QryPunchInOutCommand = new DelegateCommand(() =>
             {
-                var a = 1;
+                
             });
             QryDayOffCommand = new DelegateCommand(() =>
             {
-                var a = 1;
+                _navigationService.NavigateAsync("/NavigationPage/MainPage/ptmq003", para);
             });
         }
 
@@ -64,7 +82,7 @@ namespace Mobile.ViewModels
 
         public void OnNavigatedTo(NavigationParameters parameters)
         {
-
+            //應該要在這邊接員工號跟員工姓名?
         }
 
     }

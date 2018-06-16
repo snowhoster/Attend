@@ -52,7 +52,7 @@ namespace Mobile.ViewModels
                 MissCardItemList.Clear();
 
                 Service.BLLService BLL = new Service.BLLService();
-                var Datas = BLL.Get_MissCards("111");
+                var Datas = BLL.Get_MissCardsTest("111");
                 foreach(var data in Datas)
                 {
                     MissCardItemList.Add(data);
@@ -81,16 +81,17 @@ namespace Mobile.ViewModels
 
         }
 
-        public void OnNavigatedTo(NavigationParameters parameters)
+        public async void OnNavigatedTo(NavigationParameters parameters)
         {
-            MissCardItemList.Clear();
+            //MissCardItemList.Clear();
 
-            Service.BLLService BLL = new Service.BLLService();
-            var Datas = BLL.Get_MissCards("111");
-            foreach (var data in Datas)
-            {
-                MissCardItemList.Add(data);
-            }
+            //Service.BLLService BLL = new Service.BLLService();
+            ////var Datas = BLL.Get_MissCards("111");
+            //var Datas = await BLL.Get_MissCardsTest("085869");
+            //foreach (var data in Datas)
+            //{
+            //    MissCardItemList.Add(data);
+            //}
         }
 
     }

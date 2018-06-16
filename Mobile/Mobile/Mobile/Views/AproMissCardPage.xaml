@@ -8,15 +8,21 @@
              x:Class="Mobile.Views.AproMissCardPage">
     <StackLayout>
         <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
             <Label Grid.Row="0" Grid.Column="0" Text="工號"/>
             <Label Grid.Row="0" Grid.Column="1" Text="姓名"/>
             <Label Grid.Row="0" Grid.Column="2" Text="日期"/>
             <Label Grid.Row="0" Grid.Column="3" Text="時間"/>
             <Label Grid.Row="0" Grid.Column="4" Text="審核"/>
-        </Grid>
+        </Grid>        
         <Grid
             RowSpacing="1" ColumnSpacing="1" BackgroundColor="LightBlue" VerticalOptions="FillAndExpand">
-           
             <!--更多 ListView 的可用屬性，可以參考 https://developer.xamarin.com/api/type/Xamarin.Forms.ListView/-->
             <ListView x:Name="list"
                 ItemsSource="{Binding MissCardItemList}"
@@ -36,7 +42,6 @@
                         EventName="ItemTapped"
                         Command="{Binding MissCardItemSelectedCommand}"/>
                 </ListView.Behaviors>
-
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

@@ -3,11 +3,58 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
+             Title="查詢休假及補休資料"
              x:Class="Mobile.Views.ptmq003">
+          
+         
 
-    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+    <!--<StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
         <Label Text=" ptmq003 查詢休假及補休" />
+    </StackLayout>-->
+
+
+    <StackLayout>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Text="工號"/>
+            <Label Grid.Row="0" Grid.Column="1" Text="{Binding LoginUser}"/>
+            <Label Grid.Row="0" Grid.Column="2" Text="姓名"/>
+            <Label Grid.Row="0" Grid.Column="3" Text="{Binding Ename}"/>
+
+        </Grid>
+        <Grid ColumnSpacing ="10" RowSpacing="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Text="項目"/>
+            <Label Grid.Row="0" Grid.Column="1" Text="休假"/>
+            <Label Grid.Row="0" Grid.Column="2" Text="補休"/>
+            <Label Grid.Row="1" Grid.Column="0" Text="去年剩餘"/>
+            <Label Grid.Row="1" Grid.Column="1" Text="15天"/>
+            <Label Grid.Row="1" Grid.Column="2" Text="8天4小時"/>
+            <Label Grid.Row="2" Grid.Column="0" Text="今年可用"/>
+            <Label Grid.Row="2" Grid.Column="1" Text="30天"/>
+            <Label Grid.Row="2" Grid.Column="2" Text="12天4小時"/>
+            <Label Grid.Row="3" Grid.Column="0" Text="今年已用"/>
+            <Label Grid.Row="3" Grid.Column="1" Text="10天4小時"/>
+            <Label Grid.Row="3" Grid.Column="2" Text="2天2小時"/>
+            <Label Grid.Row="4" Grid.Column="0" Text="未轉入考勤檔"/>
+            <Label Grid.Row="4" Grid.Column="1" Text="1天0小時"/>
+            <Label Grid.Row="4" Grid.Column="2" Text="4小時"/>
+            <Label Grid.Row="5" Grid.Column="0" Text="剩餘"/>
+            <Label Grid.Row="5" Grid.Column="1" Text="20天0小時"/>
+            <Label Grid.Row="5" Grid.Column="2" Text="8小時"/>
+
+        </Grid>
     </StackLayout>
+
 
     <!--<StackLayout   Orientation="Horizontal" VerticalOptions="Center"
         <Label Text="查詢休假及補休" 
